@@ -9,7 +9,7 @@ class MyHomePage extends StatelessWidget {
   const MyHomePage({Key? key}) : super(key: key);
 
   int _getSum(items) =>
-      items.fold(0, (previous, element) => previous + element.bonus());
+      items.fold(0, (previous, element) => previous + element.amount());
 
   @override
   Widget build(BuildContext context) {
